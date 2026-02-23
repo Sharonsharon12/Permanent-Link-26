@@ -10,7 +10,7 @@ class Telegram:
     DATABASE_URL = str(env.get('DATABASE_URL',"mongodb+srv://karthickjk:karthick@cluster0.vcjskkq.mongodb.net/?retryWrites=true&w=majority"))
     UPDATES_CHANNEL = str(env.get('UPDATES_CHANNEL', "helix"))
     SESSION_NAME = str(env.get('SESSION_NAME', 'FileStream'))
-    FORCE_SUB_ID = env.get('FORCE_SUB_ID', "-1001573531263")
+    FORCE_SUB_ID = env.get('FORCE_SUB_ID', "-1002094774771")
     FORCE_SUB = env.get('FORCE_UPDATES_CHANNEL', True)
     FORCE_SUB = True if str(FORCE_SUB).lower() == "true" else False
     SLEEP_THRESHOLD = int(env.get("SLEEP_THRESHOLD", "60"))
@@ -18,8 +18,8 @@ class Telegram:
     START_PIC = env.get('START_PIC', "https://te.legra.ph/file/b110eb2c5d4bd01b4537c.jpg")
     VERIFY_PIC = env.get('VERIFY_PIC', "https://te.legra.ph/file/b110eb2c5d4bd01b4537c.jpg")
     MULTI_CLIENT = False
-    FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", "-1001739300429"))   # Logs channel for file logs
-    ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", "-1001852649500"))   # Logs channel for user logs
+    FLOG_CHANNEL = int(env.get("FLOG_CHANNEL", "-1002094774771"))   # Logs channel for file logs
+    ULOG_CHANNEL = int(env.get("ULOG_CHANNEL", "-1002094774771"))   # Logs channel for user logs
     MODE = env.get("MODE", "primary")
     SECONDARY = True if MODE.lower() == "secondary" else False
     AUTH_USERS = list(set(int(x) for x in str(env.get("AUTH_USERS", "")).split()))
